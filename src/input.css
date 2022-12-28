@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:wght@300;400;500;600;700&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@300;400;500;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ct = custom */
+.ct-menu-expended {
+    @apply absolute top-10 z-50 bg-white w-full text-center;
+}
+
+.ct-top-menu-item {
+    @apply cursor-pointer py-1 hover:text-gray-800 relative after:lg:absolute 
+    after:lg:bottom-0 after:lg:left-0 after:lg:h-0.5 after:lg:w-0 after:lg:bg-coffee-200 hover:after:lg:w-full
+    after:lg:transition-all after:lg:ease-in-out after:lg:duration-300;
+}
+
+.ct-top-menu-item-active {
+    @apply text-gray-800;
+}
+
+.ct-icon {
+    @apply w-5 h-5 inline-block;
+}
+
+.ct-circle-qualiti {
+    @apply text-xs text-center px-1.5 rounded-full;
+}
+
+.ct-subheadline {
+    @apply flex justify-center items-center mb-24;
+}
+
+.ct-subheadline-deco-line {
+    @apply  w-8 h-px bg-gray-200;
+}
+
+.ct-subheadline-label {
+    @apply  uppercase text-xs text-gray-500 mx-4 text-center tracking-widest font-bold;
+}
+
+.ct-button {
+    @apply  text-center tracking-widest
+    px-6 py-4 text-xs font-bold uppercase cursor-pointer;
+}
